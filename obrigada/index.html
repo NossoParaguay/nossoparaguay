@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Compra confirmada — Nosso Paraguay</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;600;700;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --orange: #F2884B;
+  --amber:  #F2A950;
+  --green:  #3A5830;
+  --greenL: #98A668;
+  --dark:   #3B3C40;
+  --beige:  #D9C3B0;
+  --cream:  #FBF0E0;
+  --sand:   #EDE0C8;
+  --white:  #FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Barlow Condensed',sans-serif;background:var(--cream);color:var(--dark);min-height:100vh;display:flex;flex-direction:column;}
+
+.hero {
+  background: linear-gradient(160deg,#D85C28 0%,#F2884B 35%,#F5A84A 65%,#F2C060 100%);
+  padding: 48px 32px 56px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-sun{position:absolute;top:10%;right:8%;width:80px;height:80px;border-radius:50%;background:#FFD060;box-shadow:0 0 60px rgba(255,208,60,0.6);}
+.checkmark {
+  width: 80px; height: 80px;
+  background: var(--dark);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 38px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  position: relative; z-index: 2;
+}
+.hero h1 {
+  font-weight: 900; font-size: 52px; color: #fff;
+  text-transform: uppercase; line-height: 1;
+  position: relative; z-index: 2;
+}
+.hero h1 em {
+  display: block; font-style: normal;
+  background: var(--amber); color: var(--dark);
+  padding: 2px 16px 8px; border-radius: 10px;
+  margin: 6px auto 0; display: inline-block;
+  transform: rotate(-1deg);
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.15);
+}
+.hero p {
+  font-family: 'Lora', serif;
+  font-size: 16px; color: rgba(255,255,255,0.9);
+  margin-top: 16px; line-height: 1.7;
+  position: relative; z-index: 2;
+}
+
+.steps {
+  max-width: 560px; margin: 0 auto;
+  padding: 56px 32px;
+}
+.steps h2 {
+  font-weight: 900; font-size: 32px;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.steps h2 em { font-style: normal; color: var(--orange); }
+.steps-sub {
+  font-family: 'Lora', serif; font-size: 14px;
+  color: rgba(59,60,64,0.65); margin-bottom: 32px; line-height: 1.6;
+}
+.step {
+  background: #fff; border-radius: 14px;
+  padding: 20px 22px; margin-bottom: 14px;
+  display: flex; gap: 16px; align-items: flex-start;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+}
+.step-num {
+  background: var(--amber); color: var(--dark);
+  font-weight: 900; font-size: 20px;
+  width: 38px; height: 38px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.step-text strong { font-weight: 700; font-size: 15px; display: block; margin-bottom: 3px; }
+.step-text p { font-weight: 300; font-size: 13px; color: rgba(59,60,64,0.7); line-height: 1.55; }
+
+.cta-section {
+  background: var(--dark);
+  padding: 48px 32px;
+  text-align: center;
+}
+.cta-section p {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 15px; color: var(--beige);
+  max-width: 440px; margin: 0 auto 28px;
+  line-height: 1.75;
+}
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--amber); color: var(--dark);
+  padding: 20px 36px; border-radius: 14px;
+  font-weight: 900; font-size: 18px;
+  text-decoration: none; text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 24px rgba(242,169,80,0.4);
+  transition: transform .2s, box-shadow .2s;
+}
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(242,169,80,0.5); }
+.cta-note {
+  font-weight: 300; font-size: 12px;
+  color: rgba(255,255,255,0.45); margin-top: 14px;
+}
+
+footer {
+  background: var(--cream);
+  text-align: center;
+  padding: 28px 32px;
+  font-weight: 300; font-size: 13px;
+  color: rgba(59,60,64,0.5);
+  margin-top: auto;
+}
+footer a { color: var(--orange); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-sun"></div>
+  <div class="checkmark">✅</div>
+  <h1>Compra<br><em>confirmada!</em></h1>
+  <p>Seja bem-vinda à família Nosso Paraguay.<br>Agora é só seguir os próximos passos.</p>
+</section>
+
+<section class="steps">
+  <h2>O que <em>acontece</em> agora?</h2>
+  <p class="steps-sub">São só 3 passos simples até a nossa reunião.</p>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-text">
+      <strong>Preencha o formulário abaixo</strong>
+      <p>É rápido e essencial — com suas respostas consigo preparar uma consultoria realmente personalizada para o seu momento e objetivos.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-text">
+      <strong>Aguarde meu contato</strong>
+      <p>Após o preenchimento do formulário, entrarei em contato para encontrarmos um horário que funcione para os dois.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      <strong>Reunião agendada em até 5 dias úteis</strong>
+      <p>O agendamento acontece em até 5 dias úteis após o preenchimento do formulário, conforme disponibilidade de ambas as agendas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <p>O formulário é o primeiro passo para que nossa reunião seja o mais completa e personalizada possível. Não pule essa etapa!</p>
+  <a class="cta-btn" href="https://forms.gle/3VmMhsV8ChRvC9aT8" target="_blank">
+    📋 Preencher o formulário agora
+  </a>
+  <p class="cta-note">Dúvidas? Me chama no Instagram: <a href="https://instagram.com/nosso.paraguay" style="color:var(--amber)">@nosso.paraguay</a></p>
+</section>
+
+<footer>
+  © 2026 Nosso Paraguay · Encarnación, Paraguay 🇵🇾<br/>
+  Produzido por <a href="#">Agave Comunicação</a>
+</footer>
+
+</body>
+</html>
